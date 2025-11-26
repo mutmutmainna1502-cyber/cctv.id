@@ -200,4 +200,28 @@ document.addEventListener("DOMContentLoaded", function () {
     // Hanya allow angka dan karakter telepon dasar
     this.value = this.value.replace(/[^0-9+\-\s()]/g, "");
   });
+
+  function openSocialMedia(type) {
+    const urls = {
+      instagram: {
+        app: "instagram://user?username=smrcctv",
+        web: "https://www.instagram.com/smrcctv",
+      },
+      facebook: {
+        app: "fb://page/1ESgwp741d",
+        web: "https://www.facebook.com/share/1ESgwp741d/",
+      },
+      whatsapp: {
+        app: "whatsapp://send?phone=6285143976400",
+        web: "https://wa.me/6285143976400",
+      },
+    };
+
+    if (urls[type]) {
+      window.location.href = urls[type].app;
+      setTimeout(() => {
+        window.location.href = urls[type].web;
+      }, 500);
+    }
+  }
 });
