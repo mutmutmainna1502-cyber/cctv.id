@@ -157,7 +157,7 @@ header {
 /* === HERO SECTION === */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("cctv.png") no-repeat center center/cover;
+    url("img/cctv.png") no-repeat center center/cover;
   height: 100vh;
   color: white;
   display: flex;
@@ -302,7 +302,7 @@ header {
 }
 
 .product-info {
-  padding: 1.5rempx;
+  padding: 1.5rem;
 }
 
 .product-info h3 {
@@ -314,7 +314,6 @@ header {
 .product-info p {
   color: #666;
   margin-bottom: 1rem;
-  color-scheme: var(--secondary);
 }
 
 .product-price {
